@@ -1,5 +1,5 @@
 "use strict";
-console.log('//////////////////////////////// Примитивы');
+console.log('//////////////////////////////// primitives');
 const strTs = 'str';
 const numTs = 10;
 const booleanTs = true;
@@ -21,7 +21,7 @@ function getName(name = 'Anonym', age = 17) {
 }
 console.log(getName("Dima", 25)); // Welcome Dima
 console.log(getName()); // Stop Anonym
-console.log('//////////////////////////////// Фуекции TS');
+console.log('//////////////////////////////// function TS');
 function person() {
     const nameTs = 'Dima';
     return function (ageTs) {
@@ -37,7 +37,7 @@ const sumNumberArr = function (a, b) {
 };
 const variable = sumNumberArr; // сохраняем функцию в переменную
 console.log(variable(23, 3)); // 36
-console.log('//////////////////////////////// Объекты TS');
+console.log('//////////////////////////////// object TS');
 const manSuper = {
     name: 'Dima',
     age: 38,
@@ -63,7 +63,7 @@ const womanSuper = {
 };
 console.log(manSuper.getSkills());
 console.log(womanSuper.getSkills());
-console.log('//////////////////////////////// специальные типы (enum-перечисление)');
+console.log('//////////////////////////////// special types (enum-перечисление)');
 const arr = ['html', 'css', 'js', 'ts', 'git'];
 var Skills;
 (function (Skills) {
@@ -94,11 +94,11 @@ let num;
 num = 1;
 num = null;
 num = undefined;
-console.log('//////////////////////////////// Kлассы');
+console.log('//////////////////////////////// class');
 class Person {
     constructor(name, age, //private- только для работы в нутри класса, нельзя наследовать
-    gender, //protected- только для работы в нутри наследуемого класса
-    skills) {
+        gender, //protected- только для работы в нутри наследуемого класса
+        skills) {
         this.name = name;
         this.age = age;
         this.gender = gender;
@@ -117,8 +117,8 @@ console.log(personSupe.getName()); // Dima
 console.log(personSupe.skills); // ['js', 'ts']
 class Developer extends Person {
     constructor(name, age, //private- только для работы в нутри класса, нельзя наследовать
-    gender, //protected- только для работы в нутри наследуемого класса
-    skills, english) {
+        gender, //protected- только для работы в нутри наследуемого класса
+        skills, english) {
         super(name, age, gender, skills);
         this.english = english;
     }
@@ -168,7 +168,7 @@ console.log(samsung.model); // A 50
 console.log(samsung.price); // 1500
 console.log(samsung.getPhoneYear()); // 2022
 console.log(samsung.message('bad')); // Samsung A50 not bad
-console.log('//////////////////////////////// Интерфейсы ');
+console.log('//////////////////////////////// interfaces ');
 function getLength(item) {
     console.log(item.length);
 }

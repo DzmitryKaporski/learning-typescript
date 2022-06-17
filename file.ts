@@ -1,4 +1,4 @@
-console.log('//////////////////////////////// Примитивы')
+console.log('//////////////////////////////// primitives')
 
 const strTs: string = 'str'
 const numTs: number = 10
@@ -26,7 +26,7 @@ function getName(name: string = 'Anonym', age: number = 17): string {
 console.log(getName("Dima", 25)) // Welcome Dima
 console.log(getName()) // Stop Anonym
 
-console.log('//////////////////////////////// Функции TS')
+console.log('//////////////////////////////// function TS')
 
 function person(): Function {
   const nameTs: string = 'Dima'
@@ -45,7 +45,7 @@ const sumNumberArr = function (a: number, b: number): number {
 const variable: (a: number, b: number) => number = sumNumberArr // сохраняем функцию в переменную
 console.log(variable(23, 3)) // 36
 
-console.log('//////////////////////////////// Объекты TS')
+console.log('//////////////////////////////// object TS')
 
 type PersonSuper = {
   name: string,
@@ -83,7 +83,7 @@ const womanSuper: PersonSuper = {
 console.log(manSuper.getSkills())
 console.log(womanSuper.getSkills())
 
-console.log('//////////////////////////////// специальные типы (enum-перечисление)')
+console.log('//////////////////////////////// special types  (enum-перечисление)')
 
 const arr: string[] = ['html', 'css', 'js', 'ts', 'git']
 
@@ -113,7 +113,7 @@ num = 1
 num = null
 num = undefined
 
-console.log('//////////////////////////////// Kлассы')
+console.log('//////////////////////////////// classes')
 
 class Person {
   constructor(
@@ -191,7 +191,7 @@ console.log(samsung.price) // 1500
 console.log(samsung.getPhoneYear()) // 2022
 console.log(samsung.message('bad')) // Samsung A50 not bad
 
-console.log('//////////////////////////////// Интерфейсы ')
+console.log('//////////////////////////////// interfaces ')
 
 interface ILength {
   length: number
